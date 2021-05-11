@@ -33,6 +33,7 @@ img {
 .grid-container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    gap: 1em;
 }
 
 .span-12 {
@@ -67,6 +68,7 @@ html {
 .link {
     text-decoration: none;
     color: var(--color-kombu-green);
+    transition: color 300ms ease-in-out;
 }
 
 .link:hover {
@@ -88,7 +90,7 @@ html {
 .menu {
     width: 100%;
     height: 12rem;
-    background: rgba(221, 161, 94);
+    background: var(--color-liver-dogs);
     display: flex;
     flex-direction: column;
 }
@@ -97,10 +99,6 @@ html {
     font-family: 'Playfair Display', serif;
     font-size: 6rem;
     margin-left: 2rem;
-}
-
-.header__link {
-    
 }
 
 .nav__list {
@@ -133,6 +131,33 @@ html {
 
 .nav__link:hover::after {
     opacity: 1;
+}
+
+.card {
+    display: grid;
+    place-items: center;
+    background: rgba(221, 161, 94, .4);
+    border-radius: 3rem;
+    font-family: 'Raleway', sans-serif;
+    color: var(--color-cornsilk);
+}
+
+.card-text {
+    margin: 0 1em;
+}
+
+.splash {
+    font-size: 2.2rem;
+    margin-left: 1rem;
+}
+
+.mission {
+    font-size: 1.75rem;
+}
+
+.contact {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 /* font-family: 'Raleway', sans-serif; */
