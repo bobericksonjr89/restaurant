@@ -67,7 +67,6 @@ html {
 .link {
     text-decoration: none;
     color: var(--color-kombu-green);
-    transition: color 300ms ease-in-out;
 }
 
 .link:hover {
@@ -116,6 +115,7 @@ html {
 .nav__link {
     font-size: 2rem;
     position: relative;
+    font-family: 'Raleway', sans-serif;
 }
 
 .nav__link::after {
