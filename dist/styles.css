@@ -195,6 +195,23 @@ html {
     text-align: center;
 }
 
+.about-card,
+.menu-card {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
+.menu-card {
+    margin-bottom: 2rem;
+}
+
+.card__header {
+    text-align: center;
+    width: 90%;
+    font-size: 3rem;
+    border-bottom: 2px solid var(--color-cornsilk);
+}
+
 
 /*-------------------
     MEDIA
@@ -216,8 +233,13 @@ html {
         font-size: 3rem;
     }
 
-    .contact-info {
+    .contact-info,
+    .menu-card {
         margin-bottom: 1rem;
+    }
+
+    .card__header {
+        font-size: 2rem;
     }
 }
 
@@ -238,8 +260,14 @@ html {
         font-size: 1.5rem;
     }
 
-    .contact-info {
-        margin-bottom: 1rem;
+    .about-card,
+    .menu-card {
+        font-size: 1.15rem;
+    }
+
+    .contact-info,
+    .menu-card {
+        margin-bottom: 1.5rem;
     }
 }
 
@@ -257,7 +285,8 @@ html {
         font-size: .8em;
     }
 
-    .contact-info {
+    .contact-info,
+    .menu-card {
         margin-bottom: 1rem;
     }
 }
