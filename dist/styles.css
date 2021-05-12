@@ -69,22 +69,55 @@ html {
     text-decoration: none;
     color: var(--color-kombu-green);
     transition: color 300ms ease-in-out;
+    cursor: pointer;
 }
 
 .link:hover {
     color: var(--color-dark-olive-green);
 }
 
-
-.home {
+.background {
     height: 100vh;
     min-height: 50rem;
-    background-color: black;
+}
+
+.home-background {
     background: linear-gradient(
         rgba(0, 0, 0, 0.6), 
         rgba(0, 0, 0, 0.6)
         ),
         url(/dist/images/italian-mise.jpg) no-repeat;
+    background-color: black;
+    background-size: cover;
+}
+
+.about-background {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.6), 
+        rgba(0, 0, 0, 0.6)
+        ),
+        url(/dist/images/plate.jpg) no-repeat;
+    background-color: black;
+    background-size: cover;
+}
+
+.reservations-background {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.6), 
+        rgba(0, 0, 0, 0.6)
+        ),
+        url(/dist/images/chairs.jpg) no-repeat;
+    background-color: black;
+    background-size: cover;
+}
+
+.contact-background {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.6), 
+        rgba(0, 0, 0, 0.6)
+        ),
+        url(/dist/images/outside.jpg) no-repeat;
+    background-color: black;
     background-size: cover;
 }
 

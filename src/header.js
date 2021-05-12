@@ -16,7 +16,6 @@ const getHeader = (function(content) {
 
         const h1LinkElement = document.createElement('a');
         h1LinkElement.classList.add('link', 'header__link');
-        h1LinkElement.setAttribute('href', '');
         h1LinkElement.innerText = 'Dandelion Greens';
 
         h1Element.appendChild(h1LinkElement);
@@ -51,7 +50,6 @@ const getHeader = (function(content) {
 
         const linkElement = document.createElement('a');
         linkElement.classList.add('link', 'nav__link', link.toLowerCase());
-        linkElement.setAttribute('href', '');
         linkElement.innerText = link;
 
         liElement.appendChild(linkElement);

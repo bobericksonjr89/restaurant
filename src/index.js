@@ -1,7 +1,10 @@
 import getHeader from './header';
-import getHomePage from './homePage'
+import getHomePage from './homePage';
+import getAboutPage from './aboutPage';
+import getReservationsPage from './reservationsPage';
+import getContactPage from './contactPage';
 
-const header = (function() {
+(function() {
 
     const content = document.querySelector('#content');
     
@@ -15,5 +18,38 @@ const header = (function() {
     const contactLink = document.querySelector('.contact');
 
     // Event Handlers
+    homeLink.addEventListener('click', generateHomePage);
+    aboutLink.addEventListener('click', generateAboutPage);
+    reservationsLink.addEventListener('click', generateReservationsPage);
+    contactLink.addEventListener('click', generateContactPage);
+
+    // functions
+    function generateHomePage() {
+        removeChildren();
+        getHomePage(content);
+    }
+
+    function generateAboutPage() {
+        removeChildren();
+        getAboutPage(content);
+    }
+
+    function generateReservationsPage() {
+        removeChildren();
+        getReservationsPage(content);
+    }
+
+    function generateContactPage() {
+        removeChildren();
+        getContactPage(content);
+    }
+
+    function removeChildren() {
+        const childNodes = content.childNodes;
+        for (let i = childNodes.length - 1; i > 1; i--) {
+            content.removeChild(childNodes[i]);
+        }
+    }
+
 
 })();

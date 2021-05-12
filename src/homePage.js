@@ -1,5 +1,7 @@
 const getHomePage = (function(content) {
 
+    changeBackground();
+
     // DOM Creation
     const splashCard = makeSplashCard();
     const missionCard = makeMissionCard();
@@ -11,6 +13,11 @@ const getHomePage = (function(content) {
     content.appendChild(contactCard);
 
     // functions
+    function changeBackground() {
+        content.className = '';
+        content.classList.add('grid-container', 'home-background', 'background');
+    }
+
     function makeSplashCard() {
         const splashDiv = document.createElement('div');
         splashDiv.classList.add('card', 'splash', 'span-6');
@@ -30,7 +37,7 @@ const getHomePage = (function(content) {
 
         const missionPara = document.createElement('p');
         missionPara.classList.add('card-text', 'mission__text');
-        missionPara.innerText = "Inspired by her adolescence in Italy, Chef Gianna Cafaro creates seasonal-focused menus featuring the finest ingredients sourced locally and abroad, either cultivated on small farms, or foraged from the Earth."
+        missionPara.innerText = "Inspired by her adolescence in Italy, Chef Gianna Cafaro creates seasonal-focused menus featuring the finest ingredients, sourced locally and abroad, either cultivated on small farms, or foraged from the Earth."
 
         missionDiv.appendChild(missionPara);
 
