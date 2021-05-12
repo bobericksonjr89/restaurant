@@ -1,14 +1,12 @@
-const getHeader = (function() {
-    // DOM
-    const content = document.querySelector('#content');
-    
+const getHeader = (function(content) {
+
     // DOM Creation
     const header = makeHeader();
 
-    // Dom Assembly
-
+    // DOM Assembly
     content.appendChild(header);
 
+    // functions
     function makeHeader() {
         const headerElement = document.createElement('header');
         headerElement.classList.add('menu', 'span-12')
