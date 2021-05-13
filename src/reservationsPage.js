@@ -60,7 +60,8 @@ const getReservationsPage = (function(content) {
 
         const submitButton = document.createElement('input');
         submitButton.setAttribute('type', 'submit');
-        submitButton.classList.add('card__submit')
+        submitButton.setAttribute('value', 'Submit');
+        submitButton.classList.add('card__submit');
 
         reservationsForm.append(nameLabel, nameInput, dateLabel, dateInput, sizeLabel, sizeInput, submitButton);
         reservationsCardElement.append(reservationsCardHeader, reservationsForm);
