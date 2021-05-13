@@ -33,7 +33,7 @@ img {
 .grid-container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 20% auto auto;
+    grid-template-rows: 25% auto auto;
     gap: 1em;
 }
 
