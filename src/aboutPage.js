@@ -44,7 +44,7 @@ const getAboutPage = (function(content) {
 
         const menuCardPara = document.createElement('p');
         menuCardPara.classList.add('card-text');
-        menuCardPara.innerText = "Our hand-written menus are seasonally-driven and sourced, and therefore are updated daily.  Check out our pages on Instagram and Facebook to find today's selections.  Each night we additionally feature a tasting menu of 8-9 dishes with an optional add-on wine pairing.";
+        menuCardPara.innerText = "Our handwritten menus are seasonally driven and sourced, and therefore are updated daily.  Check out our pages on Instagram and Facebook to find today's selections.  Each night we additionally feature a tasting menu of 8-9 dishes with an optional add-on wine pairing.";
 
         menuCardElement.append(menuCardHeader, menuCardPara);
         

@@ -17,7 +17,7 @@ const getContactPage = (function(content) {
     function makeContactCard() {
 
         const contactCardElement = document.createElement('div');
-        contactCardElement.classList.add('span-middle', 'card', 'contact-card' )
+        contactCardElement.classList.add('span-middle', 'card', 'contact-card');
 
         const contactCardHeader = document.createElement('h2');
         contactCardHeader.classList.add('card__header');
