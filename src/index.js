@@ -4,6 +4,7 @@ import getAboutPage from './aboutPage';
 import getReservationsPage from './reservationsPage';
 import getContactPage from './contactPage';
 
+
 (function() {
 
     const content = document.querySelector('#content');

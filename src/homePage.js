@@ -13,14 +13,13 @@ const getHomePage = (function(content) {
     content.appendChild(contactCard);
 
     // Events
-
     setTimeout(startAnimations, 500);
 
     // functions
     function startAnimations() {
-        setTimeout(animateSplash, 500);
-        setTimeout(animateMission, 1000);
-        setTimeout(animateContact, 1500);
+        animateSplash();
+        setTimeout(animateMission, 500);
+        setTimeout(animateContact, 1000);
     }
 
     function animateSplash() {
@@ -86,6 +85,7 @@ const getHomePage = (function(content) {
 
         return contactDiv;
     }
+
 
 });
 
