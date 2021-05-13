@@ -175,9 +175,11 @@ html {
     display: grid;
     place-items: center;
     background: rgba(0, 0, 0, 0.6);
-    border-radius: .5rem;
+    border-radius: .25rem;
     font-family: 'Raleway', sans-serif;
     color: var(--color-cornsilk);
+    box-shadow: 1px 1px 5px 1px black;
+    box-shadow: -1px -1px 5px 1px black;
 }
 
 .card-text {
@@ -209,16 +211,21 @@ html {
     margin-bottom: 2rem;
 }
 
+.contact-card,
+.reservations-card {
+    margin: 1rem;
+}
+
 .contact-card {
     height: 28rem;
-    margin: 1rem;
 }
 
 .card__header {
     text-align: center;
     width: 90%;
-    font-size: 3rem;
+    font-size: 4rem;
     border-bottom: 2px solid var(--color-cornsilk);
+    font-family: 'Playfair Display', serif;
 }
 
 
@@ -235,13 +242,45 @@ html {
     align-items: flex-start;
     justify-content: stretch;
     width: 90%;
-   
 }
 
 .card__contact-para {
     font-size: 1.5rem;
 }
 
+.card__reservations-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+    width: 90%;
+}
+
+.card__form-label {
+    font-size: 2rem;
+}
+
+.card__form-input {
+    height: 2rem;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    width: 20rem;
+}
+
+.card__submit {
+    width: 6rem;
+    height: 2rem;
+    font-size: 1.3rem;
+    border: 2px solid black;
+    border-radius: .5rem;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 200ms ease-in-out;
+}
+
+.card__submit:active {
+    transform: scale(.9);
+}
 
 /*-------------------
     MEDIA
@@ -336,6 +375,10 @@ html {
 
     .card__contact-para {
         font-size: .9rem;
+    }
+
+    .card__form-input {
+        width: 15rem;
     }
 }
 
