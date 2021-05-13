@@ -90,7 +90,7 @@ html {
         rgba(0, 0, 0, 0.6), 
         rgba(0, 0, 0, 0.6)
         ),
-        url(/dist/images/italian-mise.jpg) no-repeat;
+        url(/images/italian-mise.jpg) no-repeat;
     background-color: black;
     background-size: cover;
 }
@@ -100,7 +100,7 @@ html {
         rgba(0, 0, 0, 0.6), 
         rgba(0, 0, 0, 0.6)
         ),
-        url(/dist/images/plate.jpg) no-repeat;
+        url(/images/plate.jpg) no-repeat;
     background-color: black;
     background-size: cover;
 }
@@ -110,7 +110,7 @@ html {
         rgba(0, 0, 0, 0.6), 
         rgba(0, 0, 0, 0.6)
         ),
-        url(/dist/images/chairs.jpg) no-repeat;
+        url(/images/chairs.jpg) no-repeat;
     background-color: black;
     background-size: cover;
 }
@@ -120,7 +120,7 @@ html {
         rgba(0, 0, 0, 0.6), 
         rgba(0, 0, 0, 0.6)
         ),
-        url(/dist/images/outside.jpg) no-repeat;
+        url(/images/outside.jpg) no-repeat;
     background-color: black;
     background-size: cover;
 }
