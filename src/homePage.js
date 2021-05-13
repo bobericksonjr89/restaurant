@@ -14,7 +14,7 @@ const getHomePage = (function(content) {
 
     // Events
 
-    startAnimations();
+    setTimeout(startAnimations, 500);
 
     // functions
     function startAnimations() {
