@@ -283,6 +283,22 @@ html {
 }
 
 /*-------------------
+    ANIMATIONS
+-------------------*/
+
+.swoop-in {
+    transform: translateX(-100%);
+    opacity: 0;
+    overflow: hidden;
+    transition: transform .4s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity .4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    
+}
+
+.show {
+    transform: translateX(0);
+    opacity: 1;
+}
+/*-------------------
     MEDIA
 -------------------*/
 
