@@ -278,6 +278,11 @@ html {
     transition: transform 200ms ease-in-out;
 }
 
+.card__submit:hover {
+    background-color: var(--color-fawn);
+    color: var(--color-kombu-green);
+}
+
 .card__submit:active {
     transform: scale(.9);
 }
