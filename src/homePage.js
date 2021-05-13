@@ -13,6 +13,7 @@ const getHomePage = (function(content) {
     content.appendChild(contactCard);
 
     // Events
+
     startAnimations();
 
     // functions
@@ -85,8 +86,6 @@ const getHomePage = (function(content) {
 
         return contactDiv;
     }
-
-    return {startAnimations};
 
 });
 
