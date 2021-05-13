@@ -12,7 +12,28 @@ const getHomePage = (function(content) {
     content.appendChild(missionCard);
     content.appendChild(contactCard);
 
+    // Events
+    startAnimations();
+
     // functions
+    function startAnimations() {
+        setTimeout(animateSplash, 500);
+        setTimeout(animateMission, 1000);
+        setTimeout(animateContact, 1500);
+    }
+
+    function animateSplash() {
+        splashCard.classList.add('show');
+    }
+
+    function animateMission() {
+        missionCard.classList.add('show');
+    }
+
+    function animateContact() {
+        contactCard.classList.add('show');
+    }
+
     function changeBackground() {
         content.className = '';
         content.classList.add('grid-container', 'home-background', 'background');
@@ -20,7 +41,7 @@ const getHomePage = (function(content) {
 
     function makeSplashCard() {
         const splashDiv = document.createElement('div');
-        splashDiv.classList.add('card', 'splash', 'span-6');
+        splashDiv.classList.add('card', 'splash', 'span-6', 'swoop-in');
 
         const splashPara = document.createElement('p');
         splashPara.classList.add('card-text', 'splash__text');
@@ -33,7 +54,7 @@ const getHomePage = (function(content) {
 
     function makeMissionCard() {
         const missionDiv = document.createElement('div');
-        missionDiv.classList.add('card', 'mission', 'span-4');
+        missionDiv.classList.add('card', 'mission', 'span-4', 'swoop-in');
 
         const missionPara = document.createElement('p');
         missionPara.classList.add('card-text', 'mission__text');
@@ -46,7 +67,7 @@ const getHomePage = (function(content) {
 
     function makeContactCard() {
         const contactDiv = document.createElement('div');
-        contactDiv.classList.add('card', 'contact-info', 'span-2');
+        contactDiv.classList.add('card', 'contact-info', 'span-2', 'swoop-in');
 
         const hoursPara = document.createElement('p');
         hoursPara.classList.add('contact__hours');
@@ -64,6 +85,8 @@ const getHomePage = (function(content) {
 
         return contactDiv;
     }
+
+    return {startAnimations};
 
 });
 
